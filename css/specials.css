@@ -1,0 +1,129 @@
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+
+main {
+    padding: 20px;
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.product-description {
+    text-align: center;
+}
+
+.product-img {
+    width: 250px;
+    height: auto;
+    margin: 15px;
+}
+
+.sales-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sales-img {
+    width: 150px;
+    height: auto;
+}
+
+.customer-guarantee {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.guarantee-img {
+    width: 300px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.why-choose-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.why-choose-us li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reason-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+section {
+    border:1px solid white;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px;
+}
+.sales-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #c0c0c0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor:pointer
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+ul li:last-child {
+    margin-bottom: 0;
+}
+ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+}
+ul li:hover {
+    color: orange;
+}
+/* Footer Styles */
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}

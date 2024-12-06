@@ -1,0 +1,95 @@
+
+
+/* Training Table Section */
+.training-section {
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.training-section h1 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.training-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Table Styles */
+.training-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.training-table caption {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.training-table th, .training-table td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+}
+
+.training-table th {
+    background-color: #222;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.training-table td {
+    background-color: #333;
+    color: #fff;
+}
+
+.training-table tr:nth-child(even) {
+    background-color: #444;
+}
+
+.training-table tr:hover {
+    background-color: #555;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Other Content Section */
+.other-content {
+    margin-top: 40px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.other-content h2 {
+    font-size: 2em;
+    color: #0f0;
+}
+
+.other-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+}
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .training-table th, .training-table td {
+        font-size: 0.9em;
+    }
+}

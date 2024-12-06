@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media | Compain</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+    <!-- Name: Ankit Pokhrel; student number:c0953078  -->
+
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="images/947tbj.jpg" alt="Company Banner image" class="brand-img">
+                <a href="/"><span class="brand-name">Compain</span></a>
+            </div>
+            <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+            <div class="navbar-links" id="navbarLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="#" class="active">Media</a>
+                 <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="media-section">
+            <h1>Welcome to Our Media Gallery</h1>
+            <p>Enjoy a selection of audio and video content that showcases our products and events.</p>
+            <section class="audio-section">
+                <h2>Listen to Our Latest Podcast</h2>
+                <div class="audio-player">
+                    <audio controls>
+                        <source src="audio/podcast.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <p>In this episode, we discuss the future of our company and our exciting new products. Tune in to stay updated!</p>
+            </section>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <h2>Our Latest Product Introduction</h2>
+                <div class="video-player">
+                    <video controls width="100%">
+                        <source src="video/product_launch.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p>Watch our CEO reveal the features of our newest product line, coming soon to the market. It's an exciting time for Compain!</p>
+            </section>
+
+            <section class="media-call-to-action">
+                <h3>Stay Tuned for More!</h3>
+                <p>We’ll be posting more updates soon. Make sure to subscribe to our newsletter to stay informed.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Copyright 2024. All Rights Reserved.<br>
+        <a href="mailto:info@compain.com">Request information</a><br>
+        Ankit Pokhrel&nbsp; &nbsp; assigned no: 94
+    </footer>
+
+    <script>
+        // Toggle mobile menu visibility
+        function toggleMenu() {
+            const links = document.getElementById("navbarLinks");
+            links.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

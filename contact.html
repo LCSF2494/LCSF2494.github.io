@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Compain</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+    <!-- Name: Ankit Pokhrel; student number:c0953078  -->
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="images/947tbj.jpg" alt="Company Banner image" class="brand-img">
+                <a href="/"><span class="brand-name">Compain</span></a>
+            </div>
+            <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+            <div class="navbar-links" id="navbarLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                 <a href="#" class="active" disabled>Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>Please fill out the form below to get in touch with us.</p>
+
+
+            <form action="/submit-form" method="POST" class="contact-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <ol>
+                        <li>
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required size="20">
+                        </li>
+                        <li>
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required size="20">
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number:</label>
+                            <input type="number" id="phone" name="phone" placeholder="Enter your phone number" size="20">
+                        </li>
+                        <li>
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message here" required></textarea>
+                        </li>
+                        <li>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </li>
+                        <li>
+                            <label for="gender">Gender:</label>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </li>
+                        <li>
+                            <label for="newsletter">Sign up for Newsletter:</label>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Yes, I want to receive updates</label>
+                        </li>
+                        <li>
+                            <label for="product">Product Inquiry:</label>
+                            <select id="product" name="product">
+                                <option value="product1">Product 1</option>
+                                <option value="product2">Product 2</option>
+                                <option value="product3">Product 3</option>
+                            </select>
+                        </li>
+                    </ol>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+            <div class="map-container">
+                <h2>Our Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28619.298334788284!2d-123.38423079996117!3d48.423546991852305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f738bddb06171%3A0x38e8f3741ebb48ed!2sVictoria%2C%20BC%2C%20Canada!5e0!3m2!1sen!2snp!4v1733467991149!5m2!1sen!2snp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Copyright 2024. All Rights Reserved.<br>
+        <a href="mailto:info@compain.com">Request information</a><br>
+        Ankit Pokhrel&nbsp; &nbsp; Assigned no: 94
+    </footer>
+
+    <script>
+        // Toggle mobile menu visibility
+        function toggleMenu() {
+            const links = document.getElementById("navbarLinks");
+            links.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
